@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
 }
 
 :root{
@@ -18,6 +21,7 @@ body{
     background: var(--bg-primario-gradient);
     color: white;
     font-family: var(--arial);
+    background-repeat: no-repeat;
 }
 .Bienvenida{
     display: flex;
