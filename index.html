@@ -5,15 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIenvenido Pirulu</title>
     <link rel="stylesheet" href="./css/estiloPrueba.css">
-</head>
-<body>
-    <header>
-        <div class="menuperfil">
-            <button></button>
-            <samp class="userName">Pirulo</samp>
-        </div>
-        <div class="Carrito"></div>
+
+<style>
+    .d-flex{display: flex
+    ;justify-content: space-between;align-items: center;}
+        header{
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        body{
+            color:black!important
+        }
+    .listaCategorias{
         
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            list-style: none;
+            gap: 10px;
+            padding: 10px;
+            margin: 0;
+            overflow-x: auto;
+        }
+        .itemCat{
+            display: flex; flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 150px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.747);
+            padding: .25em;
+            text-align: center;
+        }
+        .productoItem{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1 0 150px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.747);
+            padding: .25em;
+            text-align: center;
+        }
+        .datosProducto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .productoImagen{
+            height: 100px;
+      overflow: hidden;
+      padding: 0;
+      border-radius: 1em;
+      mix-blend-mode: multiply;
+    
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex">
+        <div class="menuperfil">
+            <button>🎆</button>
+            <span class="userName">Pirulo</span>
+        </div>
+        <div class="Carrito">🛒</div>
     </header>    
+
+    <nav class="categoria">
+        <ul class="listaCategorias">
+            <li class="itemCat"><div class="icono">🍔</div>Hamburguesas</li>
+            <li class="itemCat"><div class="icono">🍕</div>Pizza</li>
+            <li class="itemCat"><div class="icono">🍣</div>Sushi</li>
+            <li class="itemCat"><div class="icono">🍰</div>Postres</li>
+            <li class="itemCat"><div class="icono">🍹</div>Bebidas</li>
+        </ul>
+    </nav>
+
+<section class="listaProductos">
+    <div class="productoItem">
+        <div class="productoImagen"><img src="img/istockphoto-520410807-612x612.jpeg" alt="" height="100px"></div>
+        <div class="datosProducto">
+        <div class="productoNombre">Hamburguesa</div>    
+        <div class="productoPrecio">$100</div>
+            <button class="agregarCarrito">Agregar al carrito</button>
 </body>
 </html>
